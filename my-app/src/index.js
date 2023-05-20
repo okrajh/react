@@ -1,12 +1,24 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 
-function Hello(props){
+function Container(props){
     return(
-        <div>Hello {props.name} !</div>
+        <div>
+            <h1>Hell'o {props.name}</h1>
+            <Box name="Radhe"></Box>
+        </div>
+
     )
 }
 
-const container = document.getElementById("root")
-const root = ReactDOM.createRoot(container)
-root.render(<Hello name="Himanshu Raj"/>)
+function Box(props){
+    return(
+        <div>
+            <h1>Box {props.name}</h1>
+        </div> 
+    )
+
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(<Container name="Himanshu Raj"/>)
