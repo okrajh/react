@@ -1,4 +1,10 @@
-import React from "react";
-var name = "Learner";
-var element = <h1>Hello, {name}.Welcome to GeeksforGeeks.</h1>;
-export default element
+import { Video,Thumb } from './components/Video';
+
+function App(params) {
+    return <div>
+            <h1>hellow world</h1>
+            <Video></Video>
+            <Thumb></Thumb>
+            </div>
+}
+export default App;
