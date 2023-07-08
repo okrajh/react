@@ -1,8 +1,8 @@
 function Video(){
-    return <div>Video</div>
+    return <div>
+        <img src="https://www.pngitem.com/pimgs/m/272-2720656_user-profile-dummy-hd-png-download.png" alt="himanshu raj" width="170"/>
+        <div>Hellow</div>
+    </div>
 }
-function Thumb(){
-    return <div>Thumb</div>
-}
+export default Video;
 
-export {Video,Thumb}
